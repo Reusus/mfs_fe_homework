@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Reusus">
+        <title>表单一练习</title>
+    </head>
+    <body>
+        <form action="/getInfo" method="get">
+            <div class="username">
+                用户名：<input type="text" name="username" />
+            </div>
+            <div class="password">
+                密码：<input type="password" name="password" />
+            </div>
+            <div class="sex">
+                性别：
+                男<input type="radio" name="sex" value="man" />
+                女<input type="radio" name="sex" value="woman" />
+            </div>
+            <div class="skill">
+                擅长技能：
+                HTML<input type="checkbox" name="HTML" value="on" />
+                CSS<input type="checkbox" name="CSS" value="on" />
+                JavaScript<input type="checkbox" name="JavaScript" value="on" />
+            </div>
+            <div class="city">
+                所在城市：
+                <select name="city">
+                    <option value="Beijing">北京</option>
+                    <option value="Shanghai">上海</option>
+                    <option value="Shenzhen">深圳</option>
+                </select>
+            </div>
+            <div class="button">
+                <button>提交</button>
+                <button type="reset">重置</button>
+            </div>
+        </form>
+    </body>
+</html>
