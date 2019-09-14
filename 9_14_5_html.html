@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Reusus">
+        <title>表单二练习</title>
+    </head>
+    <body>
+        <form action="/getInfo" method="post">
+            <div class="username">
+                用户名：<input type="text" name="username" />
+            </div>
+            <div class="password">
+                密码：<input type="password" name="password" />
+            </div>
+            <div class="sex">
+                性别：
+                男<input type="radio" name="sex" value="man" />
+                女<input type="radio" name="sex" value="woman" />
+            </div>
+            <div class="skill">
+                擅长技能：
+                HTML<input type="checkbox" name="HTML" value="on" />
+                CSS<input type="checkbox" name="CSS" value="on" />
+                JavaScript<input type="checkbox" name="JavaScript" value="on" />
+            </div>
+            <div class="email">
+                E-mail：<input type="email" name="email" />
+            </div>
+            <div class="url">
+                URL:<input type="url" name="url" />
+            </div>
+            <div class="number">
+                数字:<input type="number" name="number" />
+            </div>
+            <div class="range">
+                百分比:<input type="range" name="range" />
+            </div>
+            <div class="date">
+                日期:<input type="date" name="date" />
+            </div>
+            <div class="time">
+                时间:<input type="time" name="time" />
+            </div>
+            <div class="color">
+                颜色:<input type="color" name="color" />
+            </div>
+            <div class="image">
+                图片形式的提交按钮:<input type="image" name="image" src="https://www.baidu.com/img/bd_logo1.png" />
+            </div>
+            <div class="file">
+                文件:<input type="file" name="file" />
+            </div>
+            <div class="buttons">
+                <input type="submit" name="submit" />
+                <input type="reset" name="reset" />
+                <input type="button" name="button" value="按钮" />
+            </div>
+        </form>
+        <hr />
+        <form action="/getmore">
+            <div class="requiredemail">
+                Email：<input type="email" required />
+            </div>
+            <div class="validnumber">
+                请输入一个0到100之间的偶数：<input type="number" min="0" max="100" step="2" />
+            </div>
+            <div class="validselect">
+                城市：<input list="cities" />
+                <datalist id="cities">
+                    <option value="北京"></option>
+                    <option value="上海"></option>
+                    <option value="广州"></option>
+                    <option value="深圳"></option>
+                </datalist>
+            </div>
+            <div class="submit">
+                <button>提交</button>
+            </div>
+        </form>
+    </body>
+</html>
