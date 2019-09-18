@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0
+    }
+    *{
+      box-sizing: border-box
+    }
+    .left {
+      float: left;
+      width: 100px;
+    }
+    .left a{
+      display: block
+    }
+    .right {
+      float: left;
+      width: calc(100% - 102px);
+      height: 100vh
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left">
+    <a href="http://www.baidu.com" target="iframe1">百度</a>
+    <a href="http://www.sina.com.cn" target="iframe1">新浪</a>
+    <a href="https://www.mafengshe.com" target="iframe1">码蜂社</a>
+  </div>
+  <iframe name="iframe1" src="http://www.baidu.com" class="right"></iframe>
+</body>
+
+</html>
