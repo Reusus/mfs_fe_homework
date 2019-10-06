@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Practice</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 1000px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main{
+            order: 2;
+            flex: auto;
+            background: red;
+        }
+        .head{
+            order: 0;
+            height: 100px;
+            width: 1000px;
+            background: green;
+        }
+        .lside{
+            order: 1;
+            width: 200px;
+            height: 300px;
+            flex: none;
+            background: yellow;
+        }
+        .rside{
+            order: 3;
+            width: 200px;
+            height: 300px;
+            flex: none;
+            background: yellow;
+        }
+        .foot{
+            order: 4;
+            height: 100px;
+            width: 1000px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">主要内容</div>
+        <div class="head">头部</div>
+        <div class="lside">左边栏</div>
+        <div class="rside">右边栏</div>
+        <div class="foot">底部</div>
+    </div>
+</body>
+</html>

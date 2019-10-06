@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice</title>
+    <style>
+        body{
+            background: black
+        }
+        .dice{
+            width: 180px;
+            height: 180px;
+            border: 5px solid #eee;
+            border-radius: 15px;
+            background: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .point{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background: black;
+            border-radius: 50%
+        }
+        .one{
+            align-items: center;
+            justify-content: center;
+        }
+        .two{
+            justify-content: space-between;
+        }
+        .two .point:nth-child(2){
+            align-self: flex-end;
+        }
+        .three{
+            align-items: center;
+        }
+        .three .point:first-child{
+            align-self: flex-start;
+        }
+        .three .point:nth-child(3){
+            align-self: flex-end;
+        }
+        .four{
+            align-content: space-between;
+        }
+        .column{
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-between;
+        }
+        .five .column{
+            justify-content: center;
+        }
+        .five{
+            align-content: space-between;
+            justify-content: space-between;
+        }
+        .six{
+            flex-direction: column;
+            align-content: space-between;
+        }
+        .container{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="dice one">
+        <div class="point"></div>
+    </div>
+    <div class="dice two">
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+    <div class="dice three">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+    <div class="dice four">
+        <div class="column">
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+        <div class="column">
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    </div>
+    <div class="dice five">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="column"><div class="point"></div></div>
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+    <div class="dice six">
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+    </div>
+    </div>
+</body>
+</html>
