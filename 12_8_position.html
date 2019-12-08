@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    .navi{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        background: #ffe502;
+        top: 0px;
+        justify-content: center;
+    }
+    .btn{
+        line-height: 50px;
+        margin: 0 15px;
+    }
+    .title{
+        margin:600px auto;
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .eng{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .chn{
+        font-size: 60px;
+    }
+    .circle{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background: yellow;
+        border-radius: 30px;
+        top: 75px;
+        left: -30px
+    }
+    .tri{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border: 40px solid transparent;
+        border-top-color: yellow;
+        top: -20px;
+        left: 270px;
+        transform: rotate(65deg);
+    }
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <div class="btn" style="font-weight: bold;">码蜂社</div>
+        <div class="btn">首页</div>
+        <div class="btn">基础闯关班</div>
+        <div class="btn">Web闯关班</div>
+        <div class="btn">课程选择</div>
+        <div class="btn">社区</div>
+        <div class="btn">关于我们</div>
+    </nav>
+    <div class="title">
+        <div class="eng">SHARED COURSE</div>
+        <div class="chn">课程分享</div>
+        <div class="circle"></div>
+        <div class="tri"></div>
+    </div>
+</body>
+</html>
