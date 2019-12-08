@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media</title>
+    <style>
+    body{
+        margin: 0;
+    }
+    .navi{
+        margin: 10px auto;
+        width: 95%;
+        height: 50px;
+        border-radius: 5px;
+        background: rgb(248,248,248);
+        display: flex;
+    }
+    .item{
+        line-height: 50px;
+        text-align: center;
+        padding:0 20px;
+        position: relative;
+        font-size: 14px;
+    }
+    .item:hover{
+        background: rgb(231,231,231);
+    }
+    .container{
+        position: absolute;
+        left:0;
+        width: 160px;
+        height: 180px;
+        display: flex;
+        display: none;
+        flex-direction: column;
+        border: 1px solid rgb(200,200,200);
+        padding: 5px 0;
+    }
+    .item:hover .container{
+        display: flex;
+    }
+    .item-a{
+        text-align: left;
+        line-height: 26px;
+        padding: 0 20px;
+    }
+    .item-a:hover{
+        background-color: rgb(248,248,248);
+    }
+    .divide{
+        margin: 13px 0;
+        width: 160px;
+        border-top: 1px solid rgb(231,231,231);
+        background-color: rgb(231,231,231);
+    }
+    @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .navi{
+        flex-direction: column;
+        height: auto;
+    }
+    .container{
+        width: 100%;
+    }
+    [class*="item"] {
+        width: 95%;
+    }
+    .item-a{
+        text-align: center;
+    }
+    .divide{
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <div class="item" style="font-size: 18px;">菜鸟教程</div>
+        <div class="item">iOS</div>
+        <div class="item">SVN</div>
+        <div class="item">Java
+            <div class="container">
+                <div class="item-a">jmeter</div>
+                <div class="item-a">EJB</div>
+                <div class="item-a">Jasper Report</div>
+                <div class="divide"></div>
+                <div class="item-a">分离的链接</div>
+                <div class="divide"></div>
+                <div class="item-a">另一个分离的链接</div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
