@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout3</title>
+    <style>
+        #bd {
+            display: flex;
+        }
+
+        .main {
+            background: lightblue;
+            flex-grow: 1;
+        }
+
+        .sub {
+            width: 200px;
+            background: lightgreen;
+            order: -1;
+        }
+
+        .extra {
+            width: 300px;
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bd">
+        <div class="main">main</div>
+        <div class="sub">sub</div>
+        <div class="extra">extra</div>
+    </div>
+</body>
+
+</html>
